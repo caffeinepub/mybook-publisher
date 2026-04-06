@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* Inkwell Design Tokens */
+    /* Page bg: #F3F4F6 */
+    --background: 0.961 0.003 264;
+    /* White card surface */
+    --foreground: 0.16 0.008 264;
+    --card: 1 0 0;
+    --card-foreground: 0.16 0.008 264;
+    --popover: 1 0 0;
+    --popover-foreground: 0.16 0.008 264;
+
+    /* Navy primary: #0F2438 */
+    --primary: 0.22 0.042 240;
+    --primary-foreground: 0.985 0 0;
+
+    /* Light secondary */
+    --secondary: 0.97 0.003 264;
+    --secondary-foreground: 0.22 0.042 240;
+
+    /* Muted grays */
+    --muted: 0.97 0.003 264;
+    --muted-foreground: 0.55 0.01 264;
+
+    /* Gold accent: #E0A91A */
+    --accent: 0.73 0.14 82;
+    --accent-foreground: 0.16 0.008 264;
+
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    /* Borders: #E5E7EB */
+    --border: 0.912 0.005 264;
+    --input: 0.912 0.005 264;
+    --ring: 0.73 0.14 82;
+
+    --chart-1: 0.73 0.14 82;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.16 0.008 264;
+    --sidebar-primary: 0.22 0.042 240;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0.003 264;
+    --sidebar-accent-foreground: 0.22 0.042 240;
+    --sidebar-border: 0.912 0.005 264;
+    --sidebar-ring: 0.73 0.14 82;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
